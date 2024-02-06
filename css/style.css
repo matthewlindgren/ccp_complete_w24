@@ -57,7 +57,7 @@ ol {
     list-style-type: decimal;
     padding-left: 30px;
 }
-#current_page {
+#current-page {
     font-weight: 900;
     background-color: black;
     text-decoration: underline;
