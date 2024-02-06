@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Recipes</title>
 </head>
 <body>
     <header>
-        <a href = "#main">Skip to Main Content</a>
+        <a href = "#main" class="skip-to-main">Skip to Main Content</a>
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "pets.html">Pets</a></li>
-                <li><a href = "recipes.html">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
-            </ul>
+            <a href = "index.html">Home</a>
+            <a href = "pets.html">Pets</a>
+            <a href = "recipes.html" id="current_page">Recipes</a>
+            <a href = "travel.html">Travel</a>
         </nav>
         <h1>Recipes</h1>
     </header>
     <main id="main">
+        <hr>
         <div>
             <h2>Swedish Pancakes</h2>
-            <p>Swedish pancakes are a Swedish take on pancakes. This recipe comes from Kristi at <a href="https://true-north-kitchen.com/swedish-pancakes-with-lingonberries/">True North Kitchen</a></p>
-            <img src="images/swedish-pancakes-platted.jpeg" alt="Swedish pancakes dusted with powdered sugar, plated with berries on the side">
+            <div class="cover-grid">
+                <img src="images/swedish-pancakes-platted.jpeg" alt="Swedish pancakes dusted with powdered sugar, plated with berries on the side" class="cover-image">
+                <p>Swedish pancakes are a Swedish take on pancakes. This recipe comes from Kristi at<a href="https://true-north-kitchen.com/swedish-pancakes-with-lingonberries/">True North Kitchen</a></p>
+            </div>
             <h3>Ingredients</h3>
             <ul>
                 <li>Butter</li>
@@ -40,12 +43,15 @@
                 <li>Preheat the oven to 200 degrees if you plan to eat the pannkakor right away.  Heat a 10 inch nonstick skillet over medium heat.  Stir the batter briefly to recombine. Brush skillet with melted butter.  Pick the skillet up off of the burner and quickly add ¼ cup of batter. Immediately begin swirling the batter around the skillet so that it coats the bottom of the pan.  Continue swirling until the batter is just set.  Return skillet to the burner. Cook until the pancake is golden brown in spots on the bottom, about 30 seconds. Use a thin spatula to loosen the pancake, flip it over continue to cook on the other side for about 30 seconds.  Transfer to a plate. Cover with foil and transfer to oven to keep warm and repeat with remaining batter, wiping out skillet in between pancakes with paper towel as needed.</li>
                 <li>Serve with lingonberry jam and butter (see note below) or other desired toppings and/or fillings. See notes below for more information about making ahead of time and storing in the refrigerator or freezer.</li>
             </ol>
-            <img src="images/swedish-pancakes-pan.jpeg" alt="swedish pancakes being flipped on a pan">
+            <img src="images/swedish-pancakes-pan.jpeg" alt="swedish pancakes being flipped on a pan" class="supp-image">
         </div>
+        <hr>
         <div>
             <h2>Spaghetti</h2>
-            <p>Spaghetti is a dish that has been made in multiple origin cuisines, notably Italy, Korea, and America</p>
-            <img src="images/spaghetti.jpg" alt="a plate full of spaghetti with red meat sauce on top">
+            <div class="cover-grid">
+                <img src="images/spaghetti.jpg" alt="a plate full of spaghetti with red meat sauce on top" class="cover-image">
+                <p>Spaghetti is a dish that has been made in multiple origin cuisines, notably Italy, Korea, and America</p>
+            </div>
             <h3>Ingredients</h3>
             <ul>
                 <li>Dry spaghetti noodles</li>
@@ -59,10 +65,13 @@
                 <li>Once the noodles are cooked, plate on a pan and add cheese on top</li>
             </ol>
         </div>
+        <hr>
         <div>
             <h2>Double Chocolate Cookies</h2>
-            <p>Double chocolate cookies are a recipe native to Michigan</p>
-            <img src="images/double_chocolate_cookies.png" alt="Five chocolate cookies stacked on a wooden cutting board">
+            <div class="cover-grid">
+                <img src="images/double_chocolate_cookies.png" alt="Five chocolate cookies stacked on a wooden cutting board" class="cover-image">
+                <p>Double chocolate cookies are a recipe native to Michigan</p>
+            </div>
             <h3>Ingredients</h3>
             <ul>
                 <li>Unsalted butter</li>
@@ -88,7 +97,7 @@
                 <li>Form 15 cookies and place on a baking sheet.</li>
                 <li>Cook for 12 to 13 minutes at 350 degrees.</li>
             </ol>
-            <img src="images/double_chocolate_chips.png" alt="Chocolate chips in a stack">
+            <img src="images/double_chocolate_chips.png" alt="Chocolate chips in a stack" class="supp-image">
         </div>
     </main>
 </body>

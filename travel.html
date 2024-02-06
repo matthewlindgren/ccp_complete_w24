@@ -3,61 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Travel</title>
 </head>
 <body>
     <header>
-        <a href = "#main">Skip to Main Content</a>
+        <a href = "#main" class="skip-to-main">Skip to Main Content</a>
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "pets.html">Pets</a></li>
-                <li><a href = "recipes.html">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
-            </ul>
+            <a href = "index.html">Home</a>
+            <a href = "pets.html">Pets</a>
+            <a href = "recipes.html">Recipes</a>
+            <a href = "travel.html" id="current_page">Travel</a>
         </nav>
         <h1>Travel</h1>
     </header>
     <main id="main">
         <div> <!-- Chiang Mai -->
             <h2>Chiang Mai, Thailand</h2>
-            <img src="images/chiangmaigif.gif" alt="lanterns floating in the air">
+            <img src="images/chiangmaigif.gif" alt="lanterns floating in the air" class="cover-image">
             <h3>About Chiang Mai</h3>
             <p>Chiang Mai, nestled in the lush hills of northern Thailand, is a city that captivates with its unique blend of cultural richness and natural beauty. Situated approximately 700 kilometers north of Bangkok, Chiang Mai is the largest city in the region and serves as the capital of the province of the same name. Its geographical location is nothing short of enchanting, surrounded by forested mountains and picturesque landscapes. This charming city, often referred to as the "Rose of the North," offers visitors a delightful escape from the bustling urban life, inviting them to explore a realm where tradition meets modernity amidst a backdrop of stunning scenery.</p>
             <p>The heart of Chiang Mai beats with a rich history that dates back over 700 years. Founded in 1296, the city was originally the capital of the ancient Lanna Kingdom. Today, remnants of its storied past are scattered throughout the city, from the ancient temples that dot the landscape to the preserved city walls and moats that harken back to a bygone era. Among the city's treasures is the revered Wat Phra Singh, a 14th-century temple known for its intricate architecture and revered Buddha image. Chiang Mai's historical sites provide a captivating glimpse into its heritage, making it a destination that seamlessly weaves together the past and present for visitors to explore and appreciate</p>
             <h3>Photo Journal</h3>
-            <img src="images/chiangmai1.jpeg" alt="colorful hot balloons in the heart of Chiang Mai">
-            <img src="images/chiangmai2.jpeg" alt="several elephants and smiley volunteers in the forest">
-            <img src="images/chiangmai3.jpeg" alt="ancient temple of Chiang Mai">
-            <img src="images/chiangmai4.jpeg" alt="several monks walking in the street in Chiang Mai">
-            <img src="images/chiangmai5.jpeg" alt="Several dishes from Chiang Mai">
+            <div class="photo-gallery">
+                <img src="images/chiangmai1.jpeg" alt="colorful hot balloons in the heart of Chiang Mai">
+                <img src="images/chiangmai2.jpeg" alt="several elephants and smiley volunteers in the forest">
+                <img src="images/chiangmai3.jpeg" alt="ancient temple of Chiang Mai">
+                <img src="images/chiangmai4.jpeg" alt="several monks walking in the street in Chiang Mai">
+                <img src="images/chiangmai5.jpeg" alt="Several dishes from Chiang Mai">
+            </div>
         </div>
         <div> <!-- Hawaii -->
             <h2>Hawaii, United States</h2>
-            <img src="images/hawaii.gif" alt="Hawaiian Beach">
+            <img src="images/hawaii.gif" alt="Hawaiian Beach" class="cover-image">
             <h3>About Hawaii</h3>
             <p>Welcome to Hawaii, the Aloha state. Hawaii is comprised of a chain of 132 islands. We usually think of the eight main islands when we think of Hawaii. This is not surprising as the other 124 islands only total about 3 square miles in land area.</p>
             <p>Hawaii is home of the world's most active volcano, the crater of Kilauea on Mauna Loa. Sandy beaches, towering volcanoes, and lush valleys lure thousands of tourists each year to this tropical paradise.</p>
             <h3>Photo Journal</h3>
-            <img src="images/hawaii.jpg" alt="Coastline of Hawaii">
-            <img src="images/hawaii_na_pali.jpg" alt="Na'Pali in Hawaii">
-            <img src="images/hawaii_saddle-road.jpg" alt="Road in the middle of lucious green mountains on a sunny day">
-            <img src="images/hawaii_turtle.jpg" alt="Turtle swimming off the coast of Hawaii">
-            <img src="images/hawaii_whale.jpg" alt="Whale in the ocean off the coast of Hawaii">
+            <div class="photo-gallery">
+                <img src="images/hawaii.jpg" alt="Coastline of Hawaii">
+                <img src="images/hawaii_na_pali.jpg" alt="Na'Pali in Hawaii">
+                <img src="images/hawaii_saddle-road.jpg" alt="Road in the middle of lucious green mountains on a sunny day">
+                <img src="images/hawaii_turtle.jpg" alt="Turtle swimming off the coast of Hawaii">
+                <img src="images/hawaii_whale.jpg" alt="Whale in the ocean off the coast of Hawaii">
+            </div>
         </div>
         <div> <!-- London -->
             <h2>London, England</h2>
-            <img src="images/London_City_View.jpg" alt="View overlooking London England">
+            <img src="images/London_City_View.jpg" alt="View overlooking London England" class="cover-image">
             <h3>About London</h3>
             <p>As one of the most iconic cities in the world, London carries a rich history that is matched by its continuous growth and evolution. A powerhouse of culture, politics, and finance, it stands as a city where the past and present exist harmoniously side by side.</p>
             <p> From the ancient towers that narrate tales of a regal past to modern architectural marvels that reach for the skies, London offers an unrivaled blend of history and modernity.</p>
             <h3>Photo Journal</h3>
-            <img src="images/London_Big_Ben.jpg" alt="Big Ben clocktower in London England">
-            <img src="images/London_British_Museum.jpg" alt="Inside the british museum in London England">
-            <img src="images/London_British_Museum_Lion_Statue.jpg" alt="Lion statue inside the london british museum">
-            <img src="images/London_Natural_History_Museum.jpg" alt="Natural history museum in London">
-            <img src="images/London_Natural_History_Museum_Courtyard.jpg" alt="Courtyard inside London History Museum">
-            <img src="images/London_Station.jpg" alt="Bustling train station in London, England">
+            <div class="photo-gallery">
+                <img src="images/London_Big_Ben.jpg" alt="Big Ben clocktower in London England">
+                <img src="images/London_British_Museum.jpg" alt="Inside the british museum in London England">
+                <img src="images/London_British_Museum_Lion_Statue.jpg" alt="Lion statue inside the london british museum">
+                <img src="images/London_Natural_History_Museum.jpg" alt="Natural history museum in London">
+                <img src="images/London_Natural_History_Museum_Courtyard.jpg" alt="Courtyard inside London History Museum">
+                <img src="images/London_Station.jpg" alt="Bustling train station in London, England">    
+            </div>
         </div>
     </main>
 </body>
