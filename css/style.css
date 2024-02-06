@@ -109,6 +109,6 @@ ol {
 .cover-grid img {
     object-fit: cover;
     width: 90%;
-    height: 100%;
+    height: auto;
     padding: 10px;
 }
