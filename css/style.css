@@ -1,6 +1,6 @@
 nav {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 25%));
     margin: 5px 0 5px 0;
     padding: 0 2px 0 2px;
     background-color: #40A2D8;
