@@ -1,30 +1,37 @@
 nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin: 5px 0 5px 0;
-    padding: 0 2px 0 2px;
+    padding: 2px;
     background-color: #40A2D8;
     align-items: center;
+    border-radius: 5px;
 }
 nav a {
-    margin: 5px 1px 2px 1px;
+    margin: 4px;
     font-family: Helvetica, Arial, sans-serif;
     color: white;
     font-size: 22px;
     font-weight: 300;
     text-decoration: none;
-    text-align: center;
     background-color: #0B60B0;
     min-height: 30px;
+    border-radius: 5px;
+}
+nav a p {
+    margin: 8px;
+    text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Helvetica, Arial, sans-serif;
     color: #0B60B0;
+    margin: 20px;
 }
 h1 {
     font-size: 36px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0;
 }
 h2 {
     font-size: 30px;
@@ -42,20 +49,24 @@ h4 {
     padding-top: 4px;
 }
 body {
-    font-family: Helvetica, Arial sans-serif;
-    margin: 20px;
-}
-body * {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 ul {
     list-style-type: disc;
-    padding-left: 30px;
+    padding: 0 30px 0 30px;
 }
 ol {
     list-style-type: decimal;
-    padding-left: 30px;
+    padding: 0 30px 0 30px;
+}
+header {
+    padding: 20px;
+}
+p {
+    margin: 20px;
+}
+hr {
+    margin: 30px 10px 30px 10px;
 }
 #current-page {
     font-weight: 900;
@@ -66,7 +77,7 @@ ol {
     display: grid;
     gap: 10px;
     grid-template-columns: auto auto auto;
-    /* margin: 2%; */
+    margin: 2%;
     padding: 2%;
     background-color:rgb(237, 237, 237);
     border-radius: 10px;
@@ -88,22 +99,25 @@ ol {
     width: 20%;
     height: 20%;
     border-radius:2px;
+    margin: 5% 5% 5% 5%;
 }
 .skip-to-main {
     position: absolute;
     left: -9999px;
-    z-index: 999;
     opacity: 0;
+    margin-bottom: 10px;
 }
 .skip-to-main:focus {
     position: static;
     opacity: 1;
+    margin-bottom: 10px;
 }
 .cover-grid {
     display:grid;
     grid-template-columns: 40% 60%;
     gap: 10px;
-    margin-right: 10%;
+    margin-left: 10px;
+    margin-right: 20px;
     margin-bottom: 40px;
 }
 .cover-grid img {
@@ -111,4 +125,28 @@ ol {
     width: 90%;
     height: auto;
     padding: 10px;
+}
+.banner {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), url("../images/stadium.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 900px;
+    position: relative;
+}
+.banner h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+header > p {
+    text-align: justify;
+    text-justify: inter-character;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2% 2% 2% 2%;
+    text-shadow: 0 0 30px black;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
 }
