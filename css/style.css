@@ -17,6 +17,9 @@ nav a {
     min-height: 30px;
     border-radius: 5px;
 }
+nav a:hover {
+    text-decoration: underline;
+}
 nav a p {
     margin: 8px;
     text-align: center;
@@ -68,6 +71,16 @@ p {
 hr {
     margin: 30px 10px 30px 10px;
 }
+@media (prefers-reduced-motion: reduce) {
+    img {
+        animation-play-state: paused;
+        visibility: hidden;
+    }
+    video {
+        animation-play-state: paused;
+        visibility: hidden;
+    }
+}
 #current-page {
     font-weight: 900;
     background-color: black;
@@ -76,7 +89,7 @@ hr {
 .photo-gallery {
     display: grid;
     gap: 10px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 2%;
     padding: 2%;
     background-color:rgb(237, 237, 237);
