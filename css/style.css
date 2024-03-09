@@ -162,6 +162,9 @@ hr {
 .big-banner {
     display: none;
 }
+.bg-gradient {
+    background: linear-gradient(to right, #ffd89b, #19547b);
+}
 header > p {
     text-align: justify;
     text-justify: inter-character;
@@ -265,11 +268,13 @@ header > p {
         padding: 0;
         padding-top: 20px;
     }
-    header h1 {
-        display: none;
-    }
     header > p {
         display: none;
+    }
+    header h1{
+        position: absolute;
+        left: -999px;
+        color: white;
     }
     main {
         flex: 1;
