@@ -88,7 +88,7 @@ hr {
 }
 
 .photo-gallery {
-    background-color: rgba(237, 237, 237, 0.7);
+    background-color: rgba(237, 237, 237, 0.6);
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
@@ -131,7 +131,7 @@ hr {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background-color: rgb(237, 237, 237, 0.7);
+    background-color: rgb(237, 237, 237, 0.6);
     border-radius: 6px;
     margin: 2%;
     padding: 20px;
@@ -233,7 +233,7 @@ header > p {
         display: flex;
         flex-direction: horizontal;
         gap: 10px;
-        background-color: rgb(237, 237, 237, 0.7);
+        background-color: rgb(237, 237, 237, 0.6);
         border-radius: 10px;
     }
     .recipe-description h3 {
