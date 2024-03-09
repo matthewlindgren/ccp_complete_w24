@@ -88,7 +88,7 @@ hr {
 }
 
 .photo-gallery {
-    background-color: rgb(237, 237, 237);
+    background-color: rgba(237, 237, 237, 0.7);
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
@@ -131,7 +131,7 @@ hr {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(237, 237, 237, 0.7);
     border-radius: 6px;
     margin: 2%;
     padding: 20px;
@@ -179,7 +179,6 @@ header > p {
         grid-template-columns: 30% 70%;
         grid-template-rows: auto 1fr;
         padding: 20px;
-        background-color: rgb(237, 237, 237, 0.7);
         border-radius: 10px;
         margin: 2%;
     }
@@ -210,7 +209,6 @@ header > p {
         grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
         margin: 2%;
         padding: 2%;
-        background-color:rgba(237, 237, 237, 0.7);
         border-radius: 10px;
         height: revert;
     }
@@ -251,6 +249,7 @@ header > p {
     body {
         display: flex;
         background: linear-gradient(to right, #ffd89b, #19547b);
+        margin-bottom: 20px;
     }
     header {
         width: 200px;
