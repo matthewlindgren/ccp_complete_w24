@@ -234,7 +234,7 @@ header > p {
         margin: 2%;
         padding: 20px;
         display: flex;
-        flex-direction: horizontal;
+        flex-direction: row;
         gap: 10px;
         background-color: rgb(237, 237, 237, 0.6);
         border-radius: 10px;
