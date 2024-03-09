@@ -173,6 +173,9 @@ header > p {
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
+.box-effect:hover, .box-effect:focus {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
 @media screen and (min-width: 50em) { /* 50em = 800px */
     .cover-grid {
         display: grid;
