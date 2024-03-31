@@ -246,9 +246,10 @@ header > p {
         overflow: hidden;
     }
     .recipe-description {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
         margin: 2%;
         padding: 20px;
-        display: flex;
         flex-direction: row;
         gap: 10px;
         background-color: rgb(237, 237, 237, 0.6);
@@ -261,8 +262,17 @@ header > p {
     .recipe-description div > * {
         margin: 10px;
     }
-    .recipe-steps {
-        flex-grow: 4;
+    .recipe-description .photo-gallery img {
+        object-fit: cover;
+        margin: 0;
+        max-width: 100%;
+        height: auto
+    }
+    .recipe-description .photo-gallery {
+        overflow: auto;
+        max-height: max-content;
+        height: min-content;
+        padding: 5%;
     }
     img.big-banner {
         display: none;
@@ -407,12 +417,20 @@ header > p {
     ul {
         padding: 30px;
     }
-    ul li {
+    .condensed-grid ul li {
         font-size: 20px;
         line-height: 1.5;
     }
     .condensed-grid h3 {
         font-size: 24px;
         text-align: center;
+    }
+    .recipe-description {
+        display: grid;
+        grid-template-columns: 1fr 5fr 2fr;
+        column-gap: 5px;
+    }
+    .recipe-description ul li {
+        line-height: 1.2;
     }
 }
