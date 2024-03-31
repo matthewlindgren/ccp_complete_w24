@@ -100,7 +100,7 @@ hr {
 }
 .photo-gallery > * {
     padding: 10px;
-    height: 580px;
+    height: 562px;
 }
 
 .cover-image {
@@ -109,22 +109,18 @@ hr {
     height: 25%;
     border-radius:2px;
 }
-.supp-image {
-    object-fit: cover;
-    width: 20%;
-    height: 20%;
-    border-radius:2px;
-    margin: 5% 5% 5% 5%;
-}
 .skip-to-main {
     position: absolute;
     left: -9999px;
     margin-bottom: 10px;
-    background-color: #0F2143;
     padding: 10px;
     border-radius: 20px;
     max-width: 85px;
     z-index: 1000;
+    color: black;
+}
+.skip-to-main:visited {
+    color: black;
 }
 .skip-to-main:focus {
     top: 10px;
@@ -186,12 +182,14 @@ header > p {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.twitter-timeline {
-    margin: 2%;
-    padding-bottom: 2%;
-}
 .collapsible {
     display: none;
+}
+.recipe-description .photo-gallery {
+    height: 200px;
+}
+.recipe-description .photo-gallery > img {
+    height: 176px;
 }
 
 @media screen and (min-width: 50em) { /* 50em = 800px */
@@ -432,5 +430,38 @@ header > p {
     }
     .recipe-description ul li {
         line-height: 1.2;
+    }
+}
+@media screen and (prefers-color-scheme: dark) {
+    .cover-grid {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .photo-gallery {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff;
+    }
+    .bg-gradient {
+        background: linear-gradient(to right, #0F2143, #3b5844);
+    }
+    body {
+        background: linear-gradient(to right, #0F2143, #3b5844);
+    }
+    p {
+        color: #e7e7e7;
+    }
+    li {
+        color: #e7e7e7;
+    }
+}
+@media screen and (min-width: 50em) and (prefers-color-scheme: dark) {
+    .recipe-description {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+@media screen and (min-width: 75em) and (prefers-color-scheme: dark){
+    .condensed-grid {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
