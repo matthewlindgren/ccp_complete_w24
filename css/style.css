@@ -115,7 +115,7 @@ hr {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 20px;
-    max-width: 85px;
+    width: 85px;
     z-index: 1000;
     color: black;
 }
@@ -236,7 +236,7 @@ header > p {
         overflow: auto;
         height: 100%;
         width: revert;
-        max-width: 100%;
+        width: 100%;
         border-radius:2px;
         max-height: 50vh;
         padding: 0;
@@ -263,7 +263,7 @@ header > p {
     .recipe-description .photo-gallery img {
         object-fit: cover;
         margin: 0;
-        max-width: 100%;
+        width: 100%;
         height: auto
     }
     .recipe-description .photo-gallery {
@@ -345,7 +345,7 @@ header > p {
 
     .sidebar-logo {
         display: block;
-        max-width: 30px;
+        width: 100%;
         position: relative;
         top: 2%;
     }
@@ -453,6 +453,9 @@ header > p {
     }
     li {
         color: #e7e7e7;
+    }
+    a {
+        color: #7abdff;
     }
 }
 @media screen and (min-width: 50em) and (prefers-color-scheme: dark) {
