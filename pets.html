@@ -8,8 +8,11 @@
     <title>Pets</title>
   </head>
   <body class="bg-gradient">
+    <a href="#main" class="skip-to-main" tabindex="0">Skip to Main Content</a>
     <header>
-      <a href="#main" class="skip-to-main" tabindex="0">Skip to Main Content</a>
+      <button type="button" class="collapsible" id="collapse_button">
+          <img src="./images/sidebar.left.white.svg" alt="Collapse Menu" class="sidebar-logo">
+      </button>
       <nav>
         <a href="index.html" tabindex="0"><p>Home</p></a>
         <a href="pets.html" id="current-page" tabindex="0"><p>Pets</p></a>
@@ -41,36 +44,38 @@
             rolling. Lots and lots of rolling.
           </p>
         </div>
-        <h3>Photo Gallery</h3>
-        <div class="photo-gallery box-effect" tabindex="0">
-          <img
-            src="images/bacon_bandana.JPG"
-            alt="Brown labradoodle wearing an orange bandana"
-            tabindex="0"
-          >
-          <img
-            src="images/bacon_graduation.JPG"
-            alt="Small labradoodle puppy wearing a graduation cap and gown"
-            tabindex="0"
-          >
-          <video controls tabindex="0">
-            <source src="images/bacon_agility.mov">
-            Your browser does not support the video tag. This was a video of a
-            girl and dog demonstrating a sit and stay procedure
-          </video>
-          <img
-            tabindex="0"
-            src="images/bacon_halloween.JPG"
-            alt="Brown labradoodle wearing a pirate costume"
-          >
+        <div class="condensed-grid">
+          <h3>Photo Gallery</h3>
+          <div class="photo-gallery box-effect" tabindex="0">
+            <img
+              src="images/bacon_bandana.JPG"
+              alt="Brown labradoodle wearing an orange bandana"
+              tabindex="0"
+            >
+            <img
+              src="images/bacon_graduation.JPG"
+              alt="Small labradoodle puppy wearing a graduation cap and gown"
+              tabindex="0"
+            >
+            <video controls tabindex="0">
+              <source src="images/bacon_agility.mov">
+              Your browser does not support the video tag. This was a video of a
+              girl and dog demonstrating a sit and stay procedure
+            </video>
+            <img
+              tabindex="0"
+              src="images/bacon_halloween.JPG"
+              alt="Brown labradoodle wearing a pirate costume"
+            >
+          </div>
+          <h3>Likes</h3>
+          <ul>
+            <li>Belly rubs</li>
+            <li>Playing tug-of-war</li>
+            <li>Sneaking onto the couch</li>
+          </ul>
         </div>
 
-        <h3>Likes</h3>
-        <ul>
-          <li>Belly rubs</li>
-          <li>Playing tug-of-war</li>
-          <li>Sneaking onto the couch</li>
-        </ul>
         <!-- Jackie Wolf -->
       </div>
       <hr>
@@ -88,6 +93,7 @@
             to snuggle on the couch on a cold day and go for walks.
           </p>
         </div>
+        <div class="condensed-grid">
         <h3>Photo Gallery</h3>
         <div class="photo-gallery box-effect" tabindex="0">
           <img
@@ -117,6 +123,7 @@
           <li>Long walks</li>
           <li>Soccer</li>
         </ul>
+        </div>
       </div>
       <hr>
       <div> <!-- Pet 3 -->
@@ -142,6 +149,7 @@
             hunt and so he makes sure to get some practice with his toy duck.
           </p>
         </div>
+        <div class="condensed-grid">
         <h3>Photo Gallery</h3>
         <div class="photo-gallery box-effect">
           <img
@@ -171,6 +179,7 @@
           <li>Going to the beach</li>
           <li>His toy duck</li>
         </ul>
+        </div>
       </div>
       <hr>
       <div> <!-- Pet 4-->
@@ -194,6 +203,7 @@
             that facilitated its inclusion into the Olympics.
           </p>
         </div>
+        <div class="condensed-grid">
         <h3>Photo Gallery</h3>
         <div class="photo-gallery box-effect" tabindex="0">
           <img
@@ -223,6 +233,7 @@
           <li>Head pats</li>
           <li>Sleeping</li>
         </ul>
+        </div>
       </div>
       <hr>
       <div> <!-- Pet 5 -->
@@ -240,6 +251,7 @@
             food and is not afraid.
           </p>
         </div>
+        <div class="condensed-grid">
         <h3>Photo Gallery</h3>
         <div class="photo-gallery box-effect" tabindex="0">
           <img
@@ -269,7 +281,9 @@
           <li>Carrots</li>
           <li>Sleeping</li>
         </ul>
+        </div>
       </div>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
